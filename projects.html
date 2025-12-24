@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Peize Hu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-header">
+      <a href="index.html" style="text-decoration:none; font-weight:500;">← Home</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <h1>Projects</h1>
+
+    <!-- Project entry -->
+    <section class="project">
+
+      <h2>
+        Accelerating Photosensitized Drug Design with Graph Neural Networks
+      </h2>
+
+      <p>
+        During the summer, I worked on a project focused on accelerating sample
+        preparation for photosensitized drug design assays using graph neural
+        networks (GNNs). The goal was to replace slow, resource-intensive
+        prediction pipelines with a scalable, data-driven alternative.
+      </p>
+
+      <p>
+        Photosensitized reactions play an important role in drug discovery,
+        medical imaging, and the study of cell membranes. Gaining a better
+        understanding of these processes can directly support the development
+        of new therapeutics and diagnostic tools.
+      </p>
+
+      <p>
+        Traditionally, predicting photosensitization properties requires
+        extensive manual analysis by domain experts and can take days per
+        compound. The model I developed enables thousands of predictions per
+        second while achieving approximately 80% accuracy—performance that
+        previously required substantial human effort. This represents a
+        significant improvement in speed and scalability for early-stage
+        screening.
+      </p>
+
+      <p>
+        The core idea is to represent molecules as graphs, where atoms correspond
+        to nodes and chemical bonds to edges. The neural network learns directly
+        from this structure, incorporating a wide range of molecular descriptors
+        to approximate real-world chemical behavior. In effect, the approach
+        creates a lightweight “digital laboratory” in which molecular
+        sensitization can be explored computationally.
+      </p>
+
+      <p>
+        As part of this work, I also explored <em>UMA</em>, Meta’s large-scale
+        molecular simulator trained on over 100 million molecules, which
+        provided valuable insights and complementary perspectives on molecular
+        representation and simulation.
+      </p>
+
+      <p class="acknowledgements">
+        This project was carried out in collaboration with NexMR. I am grateful
+        to Felix Torres Hubiche and the team for their guidance and for the
+        opportunity to contribute to a project with real medical relevance.
+      </p>
+
+      <p>
+        <strong>Ongoing and future work.</strong>  
+        My next project will focus on accelerating the computation of quantum
+        descriptors. The resulting tools will be released as open-source
+        software.
+      </p>
+
+      <!-- Optional: image placeholders -->
+      <!--
+      <div class="project-images">
+        <img src="assets/molecule1.png" alt="Molecular structure example">
+        <img src="assets/molecule2.png" alt="Molecular structure example">
+      </div>
+      -->
+
+    </section>
+
+  </main>
+
+</body>
+</html>
