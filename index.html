@@ -5,43 +5,71 @@
   <title>Peize Hu</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- Navigation bar -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="projects.html">Projects</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-header">
+      <div class="nav-toggle" id="js-nav-toggle">☰</div>
+    </div>
+    <ul class="nav-list" id="js-nav-list">
+      <li><a href="#home-section">Home</a></li>
+      <li><a href="#blogs-section">Blog</a></li>
+      <li><a href="#projects-section">Projects</a></li>
+    </ul>
   </nav>
 
   <!-- Main content -->
   <main>
+    <!-- Home Section -->
+    <section id="home-section" class="section-home">
+      <img src="assets/photo.jpg" alt="Peize Hu" class="profile-photo">
 
-    <h1>Peize Hu</h1>
+      <h1>Peize Hu</h1>
+      <p class="intro">
+        I am a mathematics student at ETH Zurich with interests in:
+      </p>
 
-    <!-- Introductory paragraph -->
-    <p class="intro">
-      I am a mathematics student at ETH Zurich with interests in optimal transport,
-      machine learning, and applications to biology and personalized medicine.
-      I am particularly interested in how rigorous mathematical theory can inform
-      data-driven models of complex biological systems.
-    </p>
-
-    <!-- Links -->
-    <section>
-      <h2>Links</h2>
-      <ul>
-        <li>
-          <a href="LINKEDIN_URL_HERE" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-          <a href="CV_PDF_PATH_HERE" target="_blank">Curriculum Vitae (PDF)</a>
-        </li>
+      <ul class="interests">
+        <li>PDEs</li>
+        <li>Functional Analysis</li>
+        <li>Optimal Transport</li>
+        <li>Biomedicine</li>
+        <li>Physics-Informed Neural Networks</li>
       </ul>
+
+      <div class="icon-links">
+        <a href="LINKEDIN_URL_HERE" target="_blank">
+          <img src="assets/linkedin.svg" alt="LinkedIn" class="icon">
+        </a>
+        <a href="CV_PDF_PATH_HERE" target="_blank">
+          <img src="assets/cv.svg" alt="Curriculum Vitae" class="icon">
+        </a>
+      </div>
     </section>
 
+    <!-- Placeholder Blog Section -->
+    <section id="blogs-section" class="section-blogs">
+      <h2>Blog</h2>
+      <p>Coming soon…</p>
+    </section>
+
+    <!-- Placeholder Projects Section -->
+    <section id="projects-section" class="section-projects">
+      <h2>Projects</h2>
+      <p>Coming soon…</p>
+    </section>
   </main>
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    const navToggle = document.getElementById('js-nav-toggle');
+    const navList = document.getElementById('js-nav-list');
+
+    navToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
